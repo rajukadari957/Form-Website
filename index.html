@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        
+        background-image:url('default.avif');
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    h1{
+        color: green;
+    }
+    legend{
+        color: rgb(219, 21, 21);
+    }
+    label{
+        color:rgba(0, 0, 0, 0.902);
+    }
+</style>
+<body>
+<h1>Course Registration Form</h1>
+<form action="https://dribbble.com/shots/6681346-Free-Love-Website-Template/attachments/6681346-Free-Love-Website-Template?mode=media">
+    <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+            <tr><td><label>Name</label></td><td><input type="text" name="name" placeholder="Ex:Rahul"></td></tr>
+            <tr><td><label>Surname</label></td><td><input type="Surname" name="Surname"></td></tr><br>
+            <tr><td> <label>Mobile Number</label></td><td><input type="tel" name="Mobile number" placeholder="Ex:7989-431626"></td></tr>
+            <tr><td><label>Email</label></td><td><input type="Email" name="mail" placeholder="Ex:rahul@gmail.com"></td></tr>
+            <tr><td><label>Password</label></td><td><input type="Password" name="pwd" placeholder="min 5 character"></td></tr>
+            <tr><td> <label>Confirm Password</label></td><td><input type="Password" name="cpwd"></td></tr>
+            <tr><td><label>DOB</label></td><td><input type="date" name="DOB"></td></tr>
+            <tr><td><label>Gender</label></td><td><input type="radio" name="gender" value="M">Male<input type="radio" name="gender" value="F">Female<input type="radio" name="gender" value="O">Others</td></tr>
+            <tr><td><label>Select Country</label></td><td> <select name="Country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Bangkok">Bangkok</option>
+                <option value="Russia">Russia</option>
+                <option value="Goa">Goa</option>
+            </select></td></tr>
+            <tr><td><label>Upload Picture</label></td><td> <input type="file" name="Picture"></td></tr>
+            <tr><td><input type="reset"></td></tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Course Details</legend>
+        <label>Select Courses</label>
+        <select name="courses">
+            <option value="Python">Python Full Stack</option>
+            <option value="Java">Java Full Stack</option>
+            <option value="Rjs">React Developer</option>
+        </select><br>
+        <label>Delivery Mode</label><input type="checkbox" name="Delivery">Online<input type="checkbox" name="Delivery">Offline<br>
+        <label>Comments</label><br>
+        <textarea rows="15" cols="60"></textarea>
+    </fieldset>
+    <input type="submit" name="submit">
+</form>
+</body>
+</html>
+
